@@ -1,0 +1,120 @@
+<hr>
+<p class="display-7 fw-bold h2 text-center" id=paper-downstream>Downstream Task</p>
+<div class="row">
+    <div class="column-downstream">
+        <img src="res/img/downstream/downstream-1.png">
+        <!-- <img src="res/img/downstream/downstream-2.png"> -->
+        <img src="res/img/downstream/downstream-5.png">
+        <!-- <img src="res/img/downstream/downstream-6.png"> -->
+    </div>
+    <div class="column-downstream">
+        <img src="res/img/downstream/downstream-3.png">
+        <img src="res/img/downstream/downstream-4.png">
+        <!-- <img src="res/img/downstream/downstream-7.png">
+        <img src="res/img/downstream/downstream-8.png"> -->
+    </div>
+</div>
+<!-- <div class="row">
+    <div class="column-downstream">
+        <img src="res/img/downstream/downstream-1.png">
+        <img src="res/img/downstream/downstream-5.png">
+    </div>
+    <div class="column-downstream">
+        <img src="res/img/downstream/downstream-2.png">
+        <img src="res/img/downstream/downstream-6.png">
+    </div>
+    <div class="column-downstream">
+        <img src="res/img/downstream/downstream-3.png">
+        <img src="res/img/downstream/downstream-7.png">
+    </div>
+    <div class="column-downstream">
+        <img src="res/img/downstream/downstream-4.png">
+        <img src="res/img/downstream/downstream-8.png">
+    </div>
+</div> -->
+<br>
+<table class="table table-bordered table-sm table-striped">
+    <thead>
+        <tr>
+        <th scope="col">Method</th>
+        <th scope="col">Data</th>
+        <th scope="col">mAP for Top 9 Categories</th>
+        <th scope="col">mAP for All 25 Categories</th>
+        <th scope="col">Plastic Bag</th>
+        <th scope="col">Stone</th>
+        <th scope="col">Stroller</th>
+        <th scope="col">Traffic Light</th>
+        <th scope="col">Concrete Block</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="display:none"></tr>
+        <tr>
+        <th scope="row" rowspan="2">YOLOX-S</th>
+        <td>Original</td>
+        <td>0.186</td>
+        <td>0.321</td>
+        <td>0.302</td>
+        <td>0.020</td>
+        <td>0.218</td>
+        <td>0.193</td>
+        <td><b>0.125</b></td>
+        </tr>
+        <tr>
+        <td>Original + Ours</td>
+        <td><b>0.223</b></td>
+        <td><b>0.334</b></td>
+        <td><b>0.475</b></td>
+        <td><b>0.093</b></td>
+        <td><b>0.260</b></td>
+        <td><b>0.227</b></td>
+        <td>0.108</td>
+        </tr>
+        <tr>
+        <th scope="row" rowspan="2">YOLOX-L</th>
+        <td>Original</td>
+        <td>0.260</td>
+        <td><b>0.394</b></td>
+        <td>0.314</td>
+        <td><b>0.105</b></td>
+        <td>0.406</td>
+        <td>0.262</td>
+        <td>0.178</td>
+        </tr>
+        <tr>
+        <td>Original + Ours</td>
+        <td><b>0.271</b></td>
+        <td>0.391</td>
+        <td><b>0.336</b></td>
+        <td>0.077</td>
+        <td><b>0.474</b></td>
+        <td><b>0.318</b></td>
+        <td><b>0.309</b></td>
+        </tr>
+        <tr>
+        <th scope="row" rowspan="2">YOLOX-X</th>
+        <td>Original</td>
+        <td>0.249</td>
+        <td>0.395</td>
+        <td><b>0.319</b></td>
+        <td>0.110</td>
+        <td>0.307</td>
+        <td>0.246</td>
+        <td><b>0.215</b></td>
+        </tr>
+        <tr>
+        <td>Original + Ours</td>
+        <td><b>0.275</b></td>
+        <td><b>0.405</b></td>
+        <td>0.311</td>
+        <td><b>0.133</b></td>
+        <td><b>0.529</b></td>
+        <td><b>0.290</b></td>
+        <td>0.202</td>
+        </tr>
+    </tbody>
+</table>
+<p>
+<b>Performance of the YOLOX models trained on the original images from the CODA dataset compared to their performance when trained on a combination of original and augmented images using our Anything in Any Scene framework.</b> 
+As detailed in above table, the mean Average Precision (AP) across all 25 categories, the top 9 categories, and individual categories that demonstrated significant improvement in AP for at least one of the three YOLOX models are reported.
+</p>

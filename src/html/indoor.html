@@ -1,0 +1,89 @@
+<hr>
+<!-- Ablation -->
+<p class="display-7 fw-bold h2 text-center" id=paper-indoor-results>Visual Comparison - Indoor Scene</p>
+<div class="row justify-content-md-center">
+    <div class="row text-center">
+        <div class="col-sm">
+            <p>w/o placement</p>
+        </div>
+        <div class="col-sm">
+            <p>w/o shadow</p>
+        </div>
+        <div class="col-sm">
+            <p>w/o HDR</p>
+        </div>
+        <div class="col-sm">
+            <p>w/o style transfer</p>
+        </div>
+        <div class="col-sm">
+            <p>ours</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="column-ablation">
+        <img src="res/img/ablation/suppl-ablation-indoor-place-3.png">
+        <!-- <img src="res/img/ablation/suppl-ablation-indoor-place-2.png"> -->
+    </div>
+    <div class="column-ablation">
+        <img src="res/img/ablation/suppl-ablation-indoor-shadow-3.png">
+        <!-- <img src="res/img/ablation/suppl-ablation-indoor-shadow-2.png"> -->
+    </div>
+    <div class="column-ablation">
+        <img src="res/img/ablation/suppl-ablation-indoor-hdr-3.png">
+        <!-- <img src="res/img/ablation/suppl-ablation-indoor-hdr-2.png"> -->
+    </div>
+    <div class="column-ablation">
+        <img src="res/img/ablation/suppl-ablation-indoor-transfer-3.png">
+        <!-- <img src="res/img/ablation/suppl-ablation-indoor-transfer-2.png"> -->
+    </div>
+    <div class="column-ablation">
+        <img src="res/img/ablation/suppl-ablation-indoor-ours-3.png">
+        <!-- <img src="res/img/ablation/suppl-ablation-indoor-ours-2.png"> -->
+    </div>
+</div>
+<p>
+    <b >Qualitative comparison of a simulated video frame using indoor scene dataset ScanNet++ with different rendering options.</b> 
+    One module was removed from the proposed framework at a time: placement (w/o placement), HDR image reconstruction (w/o HDR), shadow generation (w/o shadow), and style transfer (w/o style transfer). 
+</p>
+
+<!-- Transfer Network -->
+<hr>
+<div class="row justify-content-md-center">
+    <div class="row text-center">
+        <div class="col-sm">
+            <p>DoveNet</p>
+        </div>
+        <div class="col-sm">
+            <p>StyTR2</p>
+        </div>
+        <div class="col-sm">
+            <p>PHDiffusion</p>
+        </div>
+        <div class="col-sm">
+            <p>Ours</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="column-transfer">
+        <img src="res/img/transfer/suppl-style-indoor-dovenet-3.png">
+        <!-- <img src="res/img/transfer/suppl-style-indoor-dovenet-2.png"> -->
+    </div>
+    <div class="column-transfer">
+        <img src="res/img/transfer/suppl-style-indoor-stytr-3.png">
+        <!-- <img src="res/img/transfer/suppl-style-indoor-stytr-2.png"> -->
+    </div>
+    <div class="column-transfer">
+        <img src="res/img/transfer/suppl-style-indoor-diffusion-3.png">
+        <!-- <img src="res/img/transfer/suppl-style-indoor-diffusion-2.png"> -->
+    </div>
+    <div class="column-transfer">
+        <img src="res/img/transfer/suppl-style-indoor-ours-3.png">
+        <!-- <img src="res/img/transfer/suppl-style-indoor-ours-2.png"> -->
+    </div>
+</div>
+<p>
+    <b>Qualitative comparison of a simulated video frame using indoor scene dataset ScanNet++ with different style transfer networks.</b> 
+    Different style tranfer networks are compared, including a CNN-based method DoveNet, transformer-based method StyTR2, diffusion model-based method PHDiffusion, and our method.
+</p>
